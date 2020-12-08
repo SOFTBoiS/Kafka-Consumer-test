@@ -29,8 +29,7 @@ public class ConsumerService
                   long endTime = System.nanoTime();
                   long deltaTime = endTime-startTime;
                   long deltaTimeMilis = deltaTime/1_000_000;
-                  System.out.println("deltaTime: " + deltaTimeMilis + "ms");
-                  logger.info("deltatime logged: ", deltaTimeMilis);
+                  System.out.println(String.valueOf(deltaTimeMilis));
                   initiated = false;
                   countDown = 0;
             } else {
